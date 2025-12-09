@@ -35,23 +35,12 @@
         .bg-background-dark { background-color: var(--color-background-dark); }
         .border-color { border-color: var(--color-border); }
 
-        /* Estilos para el menú móvil (Panel Lateral - Off-canvas) */
+        /* Estilos para el menú móvil */
         .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: 0; 
-            width: 80%; /* Ocupa el 80% del ancho móvil */
-            height: 100vh; 
-            transform: translateX(100%); /* Oculto fuera de la pantalla, a la derecha */
-            transition: transform 0.3s ease-in-out; 
-            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 50; 
-            display: flex; 
-            flex-direction: column;
-            padding-top: 5rem;
+            display: none;
         }
         .mobile-menu.active {
-            transform: translateX(0); /* Lo mueve a la posición visible */
+            display: flex;
         }
     </style>
 </head>
